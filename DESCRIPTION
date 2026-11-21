@@ -1,0 +1,30 @@
+Package: RMTIF
+Type: Package
+Title: Restricted Mean Time in Favor of Treatment
+Version: 0.3.1
+Authors@R: person("Mohsen", "Rezapour", role = c("aut", "cre"),
+    email = "mrezapou@amgen.com")
+Description: Estimates restricted mean time in favor of treatment from ordered
+    multistate trajectories, with lower states denoting better outcomes.
+    Provides complete-path pairwise estimation, projection standard errors,
+    normal confidence intervals and tests, terminal-aware inverse probability
+    of censoring weighting, stratified bootstrap inference, and pairwise
+    regression with sandwich or refitted-bootstrap inference. Includes
+    parameterized simulation and Monte Carlo summary tools for reversible
+    processes, continuous-time Markov paths, constant-utility regression,
+    and comparisons of longitudinal oncology endpoints.
+    The restricted-time estimand follows Mao (2023)
+    <doi:10.1111/biom.13570>; pairwise regression is motivated by the
+    proportional win-fractions framework of Mao and Wang (2021)
+    <doi:10.1111/biom.13382>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: stats, utils, parallel
+Suggests: MASS, survival, Wcompo
+NeedsCompilation: no
+Packaged: 2026-11-02 17:35:21 UTC; mrezapou
+Author: Mohsen Rezapour [aut, cre]
+Maintainer: Mohsen Rezapour <mrezapou@amgen.com>
+Repository: CRAN
+Date/Publication: 2026-11-21 19:10:09 UTC
